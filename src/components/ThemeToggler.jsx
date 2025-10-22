@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import {cn} from "@lib/utils";
 
 export const ThemeToggler = () => {
-    console.log("ThemeToggler mounted");
     const [isDarkMode, setIsDarkMode] = useState(false);
 
     // light/dark mode storage(browser logs option)
