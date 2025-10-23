@@ -17,11 +17,23 @@ export const NavBar = () => {
             setIsScrolled(window.screenY > 10)
         }
 
-        window.addEventListener("scroll", handleScroll)
-        return () => window.removeEventListener("scroll", handleScroll)
-    }, [])
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
 
 
     //NavBar
-    return <nav className= {cn("fixed w-full z-40 transition-all duration-300", )}></nav>
+    return (
+        <nav className= {cn("fixed w-full z-40 transition-all duration-300",
+            isScrolled ? "py-3 bg-background/80 backdro-blur-md shadow-xs" : "py-5"
+        )}>
+            <div className="container flex items-center justify-between">
+                <a href="#hero" className="text-xl font-bold text-primary flex items-center">
+                    <span className="relative z-10">
+                        <span className="text-glow">SOLO.DEVS</span>
+                    </span>
+                </a>
+            </div>
+        </nav>
+    );
 }
