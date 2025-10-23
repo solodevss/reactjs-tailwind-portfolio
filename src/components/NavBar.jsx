@@ -33,6 +33,19 @@ export const NavBar = () => {
                         <span className="text-glow">SOLO.DEVS</span>
                     </span>
                 </a>
+
+                {/* Desktop Navigation */}
+                <div className="hidden md:flesx space-x-8">
+                    {navItems.map((item, key) =>(
+                        <a key={key} href={item.href} 
+                            className="text-foreground/80 hover:text-primary transition-colors duration-300">
+                            {item.name}
+                        </a>
+                    ))}
+                </div>
+
+                
+
             </div>
         </nav>
     );

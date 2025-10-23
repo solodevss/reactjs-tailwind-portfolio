@@ -1,7 +1,7 @@
 // Components installation
 import { ThemeToggler } from "@components/ThemeToggler";
 import { StarBackground } from "@components/StarBackground";
-// import { StarBackground } from "@components/StarBackground";
+import { NavBar } from "@components/NavBar";
 
 
 export const Home = () => {
