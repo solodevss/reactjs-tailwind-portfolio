@@ -11,9 +11,12 @@ const navItems = [
 ];
 export const NavBar = () => {
 
+    // checks if the user has scrolled down a bit (to change navbar style)
+    // checks if the mobile menu is open or closed.
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+    // tracking scroll
     useEffect(() => {
         const handleScroll = () => {
             setIsScrolled(window.screenY > 10)

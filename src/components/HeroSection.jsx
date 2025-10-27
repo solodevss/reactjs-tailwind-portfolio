@@ -18,7 +18,7 @@ export const HeroSection = () => {
                         <span className="text-gradient ml-2 opacity-0 animate-fade-in-delay-5">{" "} Isu</span>
                     </h1>
 
-                    <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-o animate-fade-in-delay-6">
+                    <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-delay-6">
                         Nunc orci quam, efficitur sed mattis facilisis, tincidunt eu erat. Proin eget elit est.
                         Nam non fringilla felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
                         per inceptos himenaeos. Nam efficitur dolor vitae sollicitudin porta. Maecenas eu fringilla tortor.
@@ -26,12 +26,12 @@ export const HeroSection = () => {
 
                     <div className="pt-4 opacity-0 animate-fade-in-delay-4">
                         <a href="#projects" className="cosmic-button">
-                            View My Work
+                            Explore Portfolio
                         </a>
                     </div>
 
                     {/* ArrowDown animation */}
-                    <div className="absolute bottom-8 left-1/2 transform translate-x-1/2 flex flex-col items-center justify-center animate-bounce">
+                    <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center justify-center animate-bounce">
                         <span className="text-sm text-muted-foreground mb-2"> Scroll </span>
                         <ArrowDown className="h-5 w-5 text-primary"/>
                     </div>
