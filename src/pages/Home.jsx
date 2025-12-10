@@ -2,9 +2,10 @@
 import { ThemeToggler } from "@components/ThemeToggler";
 import { StarBackground } from "@components/StarBackground";
 import { NavBar } from "@components/NavBar";
-import { HeroSection } from "@components/HeroSection";
+import { Hero } from "@components/Hero";
 import { About } from "../components/About";
 import { Skills } from  "@components/Skills"
+import { Projects } from "../components/Projects";
 
 export const Home = () => {
     return <div className="min-h-screen bg-background text-foreground overflow-x-hidden">

@@ -1,6 +1,6 @@
 import { ArrowDown } from "lucide-react"
 
-export const HeroSection = () => {
+export const Hero = () => {
 
     return (
 
