@@ -7,6 +7,7 @@ import { About } from "../components/About";
 import { Skills } from  "../components/Skills"
 import { Projects } from "../components/Projects";
 import { Contact } from "../components/Contact";
+import { Footer } from "../components/Footer";
 
 export const Home = () => {
     return <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
@@ -36,6 +37,7 @@ export const Home = () => {
         {/* Footer */}
 
         <footer>
+            <Footer />
         </footer>
     </div>;
 }
